@@ -4,11 +4,13 @@
   "description": "React Hooks, Mouse Interactivity, CSS Variables, CSS Modules",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://mikeattara.github.io/text-animation",
   "repository": "https://github.com/mikeattara/text-animation.git",
   "author": "Mike Perry Yeboah Attara <mpyebattara@gmail.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
     "react-scripts": "2.1.3"
@@ -16,6 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
