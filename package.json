@@ -4,7 +4,7 @@
   "description": "React Hooks, Mouse Interactivity, CSS Variables, CSS Modules",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "https://mikeattara.github.io/text-animation",
+  "homepage": "https://mikeattara.github.io/text-animation/",
   "repository": "https://github.com/mikeattara/text-animation.git",
   "author": "Mike Perry Yeboah Attara <mpyebattara@gmail.com>",
   "license": "MIT",
