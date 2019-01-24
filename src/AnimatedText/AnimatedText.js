@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-import { classes } from "./AnimatedText.module.css";
+import classes from "./AnimatedText.module.css";
 
 export const AnimatedText = ({
   textColor,
@@ -22,27 +22,29 @@ export const AnimatedText = ({
       x: newX,
       y: newY
     };
-
     setMousePosition(newMousePosition);
   };
 
-  const handleMouseOut = event => setMousePosition(initialMousePosition);
+  const handleMouseOut = () => setMousePosition(initialMousePosition);
 
   return (
     <section
-      className={classes.AnimatedTextContainer}
-      style={{ "--maskX": mousePosition.x, "--maskY": mousePosition.y }}
+      className={classes.animatedTextContainer}
+      style={{
+        "--maskX": mousePosition.x,
+        "--maskY": mousePosition.y
+      }}
       onMouseMove={handleMouseMove}
       onMouseOut={handleMouseOut}
       ref={containerElement}
       {...props}
     >
-      <h1 style={{ color: textColor }} className={classes.AnimatedTextContent}>
+      <h1 style={{ color: textColor }} className={classes.animatedTextContent}>
         {children}
       </h1>
       <h1
         style={{ color: overlayColor }}
-        className={classes.AnimatedTextContentClone}
+        className={classes.animatedTextContentClone}
       >
         {children}
       </h1>

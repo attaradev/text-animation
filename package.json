@@ -1,7 +1,9 @@
 {
   "name": "text-animation",
   "version": "0.1.0",
-  "main": "index.js",
+  "description": "React Hooks, Mouse Interactivity, CSS Variables, CSS Modules",
+  "keywords": [],
+  "main": "src/index.js",
   "repository": "https://github.com/mikeattara/text-animation.git",
   "author": "Mike Perry Yeboah Attara <mpyebattara@gmail.com>",
   "license": "MIT",

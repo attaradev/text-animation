@@ -7,7 +7,7 @@ import { AnimatedText } from "./AnimatedText";
 const App = () => (
   <div className="App">
     <AnimatedText textColor="#cd122d" overlayColor="#fdc52c">
-      MIKE PERRY Y. ATTARA
+      MIKE ATTARA
     </AnimatedText>
   </div>
 );

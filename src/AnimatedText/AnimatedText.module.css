@@ -1,24 +1,24 @@
-.AnimatedTextContentContainer {
+.animatedTextContainer {
+  --maskX: 0;
+  --maskY: 0;
   position: relative;
   cursor: default;
   user-select: none;
-  --maskX: 0;
-  --maskY: 0;
 }
 
-.AnimatedTextContent {
+.animatedTextContent {
   color: #000000;
   font-size: 100px;
   font-weight: 600;
-  font-family: Graduate, cursive;
+  font-family: "Graduate", cursive;
   line-height: 1.1;
   letter-spacing: 5px;
-  text-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 5px 3px 8px rgba(0, 0, 0, 0.2);
   margin: 0;
 }
 
-.AnimatedTextContentClone {
-  composes: AnimatedTextContent;
+.animatedTextContentClone {
+  composes: animatedTextContent;
   position: absolute;
   left: 0;
   top: 0;
