@@ -2,6 +2,8 @@
   position: relative;
   cursor: default;
   user-select: none;
+  --maskX: 0;
+  --maskY: 0;
 }
 
 .AnimatedTextContent {
@@ -21,4 +23,11 @@
   left: 0;
   top: 0;
   color: #ffffff;
+  transition: all 0.4s ease-out;
+  clip-path: polygon(
+    0 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 50) * 0.4%) 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 50) * -0.4%) 100%,
+    0 100%
+  );
 }
